@@ -10,8 +10,11 @@ def home():
 	requests.get(ANALYTICS_URL)
 	return "Hello From Web Service!"
 
-@app.route('/about')
+@app.route('/newRoute')
+def newRoute():
+	return "This is a new Route"
 
+@app.route('/about')
 def about():
 	return "Web Service in Microservices Demo"
 
